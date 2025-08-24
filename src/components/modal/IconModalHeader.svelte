@@ -1,14 +1,14 @@
-<script>
-  export let title;
-  export let onClose;
+<script lang="ts">
+export let title;
+export let onClose;
 </script>
 
-<div class="flex justify-between items-start mb-4">
+<div class="mb-4 flex items-start justify-between">
   <h2 id="modal-title" class="text-xl font-bold dark:text-white">
     {title}
   </h2>
   <button
-    class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+    class="cursor-pointer text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
     on:click={onClose}
     aria-label="Close modal"
   >
